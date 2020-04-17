@@ -1,0 +1,34 @@
+  <body>
+    <div class="banner-top container-fluid" id="home">
+      <app-menu></app-menu>
+      <app-banner></app-banner>
+    </div>
+
+    <section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+      <div class="container-fluid">
+        <div class="inner-sec-shop px-lg-4 px-3">
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price | currency:'$':true}}</td>
+                <td><img style="width: 300px;" src="{{ product.image }}" alt=""></td>
+                <td>{{ product.desc }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-success btn-xs" routerLink="/">Back To List</button>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <app-footer></app-footer>

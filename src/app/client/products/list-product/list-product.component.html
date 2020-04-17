@@ -1,0 +1,72 @@
+<!-- <div class="row">
+
+  <div *ngFor="let product of products" ngClass="col-lg-4 col-md-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{product.image}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a [routerLink]="['/product-list', product.id]">{{product.name}}</a>
+        </h4>
+        <h5>{{product.price | currency : '$':true}}</h5>
+        <p class="card-text">{{product.desc}}</p>
+      </div>
+      <div class="btn btn-primary m-3">Buy now</div>
+      <div class="btn btn-success m-3" [routerLink]="['/product-list', product.id]">Detail</div>
+      <div class="card-footer">
+        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<h3 class="tittle-w3layouts my-lg-4 my-4">New Arrivals for you </h3>
+				<div class="row">
+					<!-- /womens -->
+					<div *ngFor="let product of products" class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="{{product.image}}" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a [routerLink]="['/product-list', product.id]" class="link-product-add-cart">Detail</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a [routerLink]="['/product-list', product.id]">{{product.name}}</a>
+												</h4>
+												<div class="grid-price mt-2">
+                          <span class="money ">{{product.price | currency : '$':true}}</span>
+                          <p class="card-text">{{product.desc}}</p>
+                        </div>
+											</div>
+
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Farenheit">
+												<input type="hidden" name="amount" value="575.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+
+
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //womens -->

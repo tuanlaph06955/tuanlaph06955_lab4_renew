@@ -1,0 +1,23 @@
+<!-- <app-header></!-->
+<!-- <app-side-bar></app-side-bar>  -->
+<div>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td><img style="width: 300px;" src="{{ product.image }}" alt=""></td>
+        <td>{{ product.desc }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-success btn-xs" routerLink="/admin">Back To List</button>
+</div>
